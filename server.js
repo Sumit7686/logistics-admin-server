@@ -31,6 +31,7 @@ app.use("/admin", require("./app/routes/admin"));
 app.use("/manager", require("./app/routes/manager"));
 app.use("/deliveryBoy", require("./app/routes/deliveryBoy"));
 app.use("/order", require("./app/routes/order"));
+app.use("/complaints", require("./app/routes/complaints"));
 
 app.listen(PORT, () => {
   console.log(`Server has been started on port ${PORT}.`);

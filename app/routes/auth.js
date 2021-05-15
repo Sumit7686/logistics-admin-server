@@ -90,8 +90,7 @@ app.post("/addArea", (req, res) => {
 
   areaData
     .save()
-    .then((result) => {
-      // console.log("add state result :", result);
+    .then(() => {
       res.json({ isValid: true, message: "Success Add Area." });
     })
     .catch((err) => {
