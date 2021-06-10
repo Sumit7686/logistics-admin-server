@@ -49,7 +49,7 @@ app.post("/login", (req, res) => {
         token: token,
         id: result[0].id,
         role: result[0].role,
-        message: "Login success Delivery Boy.",
+        message: "Login success.",
       });
     })
     .catch(() => {
@@ -63,7 +63,7 @@ app.post("/login", (req, res) => {
             token: token,
             id: result[0].id,
             role: result[0].role,
-            message: "Login Success Manager.",
+            message: "Login Success.",
           });
         })
         .catch((err) => {
